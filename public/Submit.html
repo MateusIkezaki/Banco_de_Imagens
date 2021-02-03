@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submit-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="Icon.png">
+    <title>Submit</title>
+</head>
+    <div class="navbar">
+        <div class="vertical-center">
+            <h1> Submit </h1>
+        </div>
+        <div class="home-button">
+            <a href="index.html">
+                <img src="White Home Icon.png">
+            </a>
+        </div>
+    </div>
+    <div class="submission">
+        <h2>Submission's Title</h2>
+        <textarea rows="1" cols="26" class="input-text" id='title'></textarea>
+
+        <div class="submission-container">
+            <h2>Posted by...</h2>
+            <textarea rows="1" cols="26" class="input-text" id='author'></textarea>
+        </div>
+
+        <div class="submission-container">
+            <h2>Description</h2>
+            <textarea rows="6" cols="35" class="input-text" style="font-size: 15px;" id="description"></textarea>
+        </div>
+
+        <div class="submission-container">
+            <h2>Media Upload</h2>
+            <br>
+            <input type="file" id="pic-upload"  accept="image/*" hidden/>
+            <label for="pic-upload">Upload Image</label>
+            <span id="file-chosen">Empty</span>
+        </div>
+        
+        <div class="display-image">
+            <img src="" alt="" id="display-image">
+        </div>
+        <br>
+
+        <button onclick="Submit()" class="submit-button" id='submit-button'>Submit</button>
+        
+        <br>
+        <br>
+
+    </div>
+    <script src="submit_app.js"></script>
+</body>
+</html>
